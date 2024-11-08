@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Profile editor</title>
+
+
+
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Varela+Round&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="public/style.css">
+	<link rel="stylesheet" href="public/reset.css">
+
+
+</head>
+
+<body>
+	
+	<div id="profileEditContainer">
+		<div id="profileEditContainerFirstHalf"></div>
+		
+		<form action='/upload' id="profileEditBox" method='post' encType="multipart/form-data">
+			<div id="inTheBoxContainer">
+				<div class="inTheBox">
+					<input type="file" id="avatar" name="avatar">
+					<div id="neonbody">
+						<div id="neonsign">
+							<h1>Picture upload</h1>
+						</div>
+						
+					</div>
+					
+					<img id="proPic" src='http://127.0.0.1:9000/profile.jpg'
+						alt='egy buta szendvics vagyok és nem találom a képet' class=''>
+				</div>
+
+				<div class="inTheBox" id="boxForm">
+					
+					<div class="formLine">
+						<div class="formGroup">
+							<label for="inputFirstName">First Name</label>
+							<input type="text" class="form-control" id="inputFirstName" placeholder="John">
+						</div>
+						<div class="formGroup">
+							<label for="inputLastName">Last Name</label>
+							<input type="text" class="form-control" id="inputLastName" placeholder="Doe">
+						</div>
+					</div>
+					<div class="formLine">
+						<div class="formGroup">
+							<label for="inputAddress">Address</label>
+							<input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+						</div>
+						<div class="formGroup">
+							<label for="inputAddress2">Address 2</label>
+							<input type="text" class="form-control" id="inputAddress2" placeholder="Apartment">
+						</div>
+					</div>
+					<div class="formLine">
+						<div class="formGroup">
+							<label for="inputCity">City</label>
+							<input type="text" class="form-control" id="inputCity" placeholder="Miskolc">
+						</div>
+						<div class="formGroup">
+							<label for="inputCountry">Country</label>
+							<input type="text" class="form-control" id="inputCountry" placeholder="Hungary">
+						</div>
+						<div class="formGroup">
+							<label for="inputZip">Zip</label>
+							<input type="text" id="inputZip" placeholder="3535">
+						</div>
+					</div>
+					<div class="formLine">
+						<div class="formGroup">
+							<label for="inputIntro">Introduction</label>
+							<textarea class="form-control" id="inputIntro" rows="4"
+								cols="50">Place for you introduction</textarea>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="bContainer">
+				<div id="leftside">1</div>
+				<input id="delete" type="submit" value="delete">
+				<input id="save" type="submit" value="save">
+				<div id="rightside">4</div>
+			</div>
+
+		</form>
+		<div id="circle"></i></div>
+	</div>
+
+	<script src="./public/script.js" defer></script>
+
+</body>
+
+</html>
